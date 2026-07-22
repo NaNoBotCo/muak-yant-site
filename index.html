@@ -1,0 +1,562 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MUAK YANT · หมวกยันต์ — Blessed helmets, kept to two standards</title>
+<meta name="description" content="Bespoke blessed motorcycle helmets from Chiang Mai — yant, takrut, and sacred work by living masters of the Lanna tradition, kept to two standards: the divine and the road (DOT/ECE). Plus online amulet trunk salons for collectors in Singapore, Beverly Hills, and Geneva.">
+<meta name="theme-color" content="#0D0C10">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Muak Yant">
+<meta property="og:title" content="MUAK YANT · หมวกยันต์">
+<meta property="og:description" content="Blessed helmets by living masters of the Lanna tradition — kept to two standards at once: the divine, and the road.">
+<meta property="og:url" content="https://hongdam.net/">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://hongdam.net/">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 46 120'%3E%3Cpath d='M23 4V44' stroke='%23C2A05C' stroke-width='5' stroke-linecap='round'/%3E%3Cpath d='M23 44l-5 10 10 10-10 10 5 6' stroke='%23C2A05C' stroke-width='5' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M23 80c0 6 11 8 11 17s-22 10-22 0c0-7 18-8 18 0' stroke='%23C2A05C' stroke-width='5' fill='none' stroke-linecap='round'/%3E%3Ccircle cx='23' cy='3' r='4' fill='%23C2A05C'/%3E%3C/svg%3E">
+<style>
+  /* Committed single-theme: lacquer night. A maison does not change clothes for the viewer. */
+  :root {
+    --void: #0D0C10;
+    --card: #16141A;
+    --bone: #EAE4D4;
+    --bone-dim: #9B968A;
+    --gold: #C2A05C;
+    --gold-dim: #C2A05C55;
+    --gold-faint: #C2A05C22;
+    --vermilion: #A23A24;
+    --serif: "Didot", "Bodoni 72", "Playfair Display", "Iowan Old Style", Georgia, serif;
+    --sans: "Avenir Next", "Avenir", "Seravek", "Optima", "Segoe UI", sans-serif;
+    --thai: "Sukhumvit Set", "Thonburi", "Noto Sans Thai", "Leelawadee UI", sans-serif;
+  }
+  * { box-sizing: border-box; }
+  html { background: var(--void); scroll-behavior: smooth; }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+  body {
+    margin: 0;
+    background: var(--void);
+    color: var(--bone);
+    font-family: var(--sans);
+    font-size: 17px;
+    line-height: 1.85;
+    -webkit-font-smoothing: antialiased;
+  }
+  ::selection { background: var(--gold); color: var(--void); }
+
+  .wrap { max-width: 62rem; margin: 0 auto; padding: 0 1.5rem; }
+
+  .eyebrow {
+    font-family: var(--sans);
+    font-size: 0.68rem;
+    font-weight: 500;
+    letter-spacing: 0.42em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin: 0 0 1.4rem;
+  }
+  .hairline { border: none; border-top: 1px solid var(--gold-dim); margin: 0; }
+
+  /* ---------- hero ---------- */
+  .hero {
+    min-height: 92vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 5rem 1.5rem 3rem;
+    position: relative;
+  }
+  .hero svg.unalome { margin-bottom: 2.4rem; }
+  .hero .thai-title {
+    font-family: var(--thai);
+    font-weight: 300;
+    font-size: clamp(2rem, 5vw, 3.4rem);
+    letter-spacing: 0.14em;
+    color: var(--gold);
+    margin: 0 0 0.6rem;
+  }
+  .hero h1 {
+    font-family: var(--serif);
+    font-weight: 400;
+    font-size: clamp(3.2rem, 10vw, 7rem);
+    letter-spacing: 0.16em;
+    line-height: 1.05;
+    margin: 0;
+    text-transform: uppercase;
+    text-wrap: balance;
+  }
+  .hero .tagline {
+    font-family: var(--serif);
+    font-style: italic;
+    font-size: clamp(1.05rem, 2.2vw, 1.35rem);
+    color: var(--bone-dim);
+    margin: 1.8rem 0 0;
+    max-width: 34em;
+  }
+  .hero .cities {
+    position: absolute;
+    bottom: 2.2rem; left: 0; right: 0;
+    font-size: 0.66rem;
+    letter-spacing: 0.38em;
+    text-transform: uppercase;
+    color: var(--bone-dim);
+    text-align: center;
+    padding: 0 1rem;
+  }
+  .hero .cities b { color: var(--gold); font-weight: 500; }
+
+  /* ---------- sections ---------- */
+  section { padding: 7rem 0; }
+  section + section { border-top: 1px solid var(--gold-faint); }
+  h2 {
+    font-family: var(--serif);
+    font-weight: 400;
+    font-size: clamp(1.9rem, 4vw, 2.8rem);
+    letter-spacing: 0.04em;
+    line-height: 1.25;
+    margin: 0 0 0.5rem;
+    text-wrap: balance;
+  }
+  .h2-thai {
+    font-family: var(--thai);
+    font-weight: 400;
+    font-size: 1.05rem;
+    letter-spacing: 0.1em;
+    color: var(--gold);
+    margin: 0 0 2.2rem;
+  }
+  .prose { max-width: 40rem; }
+  .prose p { margin: 1rem 0; color: var(--bone); }
+  .prose .dim { color: var(--bone-dim); }
+  em { font-family: var(--serif); }
+  .gold { color: var(--gold); }
+
+  /* ---------- belief ---------- */
+  .belief-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+    gap: 3.5rem;
+    align-items: start;
+  }
+  @media (max-width: 760px) { .belief-grid { grid-template-columns: 1fr; } }
+  .belief-aside {
+    border-left: 1px solid var(--gold-dim);
+    padding-left: 1.6rem;
+    font-family: var(--serif);
+    font-style: italic;
+    font-size: 1.25rem;
+    line-height: 1.7;
+    color: var(--bone-dim);
+  }
+  .belief-aside .thai {
+    display: block;
+    font-family: var(--thai);
+    font-style: normal;
+    font-size: 1rem;
+    color: var(--gold);
+    margin-top: 1rem;
+  }
+
+  /* ---------- commissions ---------- */
+  .tiers {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin-top: 3rem;
+  }
+  @media (max-width: 860px) { .tiers { grid-template-columns: 1fr; } }
+  .tier {
+    background: var(--card);
+    border: 1px solid var(--gold-faint);
+    padding: 2.2rem 1.8rem 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+  }
+  .tier .numeral {
+    font-family: var(--serif);
+    font-size: 1.1rem;
+    letter-spacing: 0.3em;
+    color: var(--gold);
+  }
+  .tier h3 {
+    font-family: var(--serif);
+    font-weight: 400;
+    font-size: 1.45rem;
+    margin: 0.4rem 0 0;
+    line-height: 1.3;
+  }
+  .tier .thai {
+    font-family: var(--thai);
+    font-size: 0.92rem;
+    color: var(--bone-dim);
+    margin: 0;
+  }
+  .tier .desc { font-size: 0.94rem; color: var(--bone-dim); margin: 0.8rem 0 1.4rem; flex: 1; }
+  .tier .price {
+    font-family: var(--serif);
+    font-size: 1.3rem;
+    color: var(--gold);
+    font-variant-numeric: tabular-nums;
+    margin: 0;
+  }
+  .tier .usd { font-size: 0.78rem; letter-spacing: 0.08em; color: var(--bone-dim); margin: 0.1rem 0 0; }
+  .pricing-note {
+    margin-top: 2.2rem;
+    max-width: 44rem;
+    font-size: 0.92rem;
+    color: var(--bone-dim);
+  }
+  .pricing-note b { color: var(--bone); font-weight: 500; }
+
+  /* ---------- covenant ---------- */
+  .covenant {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0 3rem;
+    margin-top: 2.5rem;
+    max-width: 52rem;
+  }
+  @media (max-width: 760px) { .covenant { grid-template-columns: 1fr; } }
+  .covenant div {
+    padding: 1.3rem 0;
+    border-top: 1px solid var(--gold-faint);
+  }
+  .covenant h4 {
+    font-family: var(--serif);
+    font-weight: 400;
+    font-size: 1.15rem;
+    margin: 0 0 0.3rem;
+    color: var(--gold);
+  }
+  .covenant p { margin: 0; font-size: 0.94rem; color: var(--bone-dim); }
+
+  /* ---------- trunk salon ---------- */
+  .salon-cities {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem 2.6rem;
+    margin: 2.6rem 0;
+    font-family: var(--serif);
+    font-size: clamp(1.3rem, 3vw, 2rem);
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--bone);
+  }
+  .salon-cities span { position: relative; }
+  .salon-cities span::after {
+    content: "·";
+    position: absolute; right: -1.6rem;
+    color: var(--gold);
+  }
+  .salon-cities span:last-child::after { content: none; }
+  .salon-invite {
+    background: var(--card);
+    border: 1px solid var(--gold-faint);
+    border-left: 3px solid var(--vermilion);
+    padding: 2rem 2.2rem;
+    margin-top: 2.6rem;
+    max-width: 44rem;
+  }
+  .salon-invite h4 {
+    font-family: var(--serif);
+    font-weight: 400;
+    font-size: 1.3rem;
+    margin: 0 0 0.6rem;
+  }
+  .salon-invite p { margin: 0.6rem 0; font-size: 0.96rem; color: var(--bone-dim); }
+  .salon-invite p b { color: var(--bone); font-weight: 500; }
+  .salon-invite .thai { font-family: var(--thai); color: var(--gold); }
+
+  /* ---------- inquire ---------- */
+  .inquire { text-align: center; }
+  .inquire .prose { margin: 0 auto; }
+  .contact {
+    margin-top: 2.4rem;
+    font-family: var(--serif);
+    font-size: 1rem;
+    letter-spacing: 0.06em;
+    color: var(--bone-dim);
+    line-height: 2.2;
+  }
+  .contact .slot { color: var(--gold); }
+  footer {
+    border-top: 1px solid var(--gold-faint);
+    padding: 2.2rem 0 3rem;
+    text-align: center;
+    font-size: 0.68rem;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: var(--bone-dim);
+  }
+
+  /* ---------- reveal ---------- */
+  .reveal { opacity: 0; transform: translateY(18px); transition: opacity 0.9s ease, transform 0.9s ease; }
+  .reveal.in { opacity: 1; transform: none; }
+  @media (prefers-reduced-motion: reduce) {
+    .reveal { opacity: 1; transform: none; transition: none; }
+  }
+
+  /* ---------- two standards ---------- */
+  .standards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    margin-top: 3rem;
+  }
+  @media (max-width: 760px) { .standards { grid-template-columns: 1fr; } }
+  .standard {
+    background: var(--card);
+    border: 1px solid var(--gold-faint);
+    padding: 2.2rem 2rem;
+  }
+  .standard .mark {
+    font-family: var(--serif);
+    font-size: 0.72rem;
+    letter-spacing: 0.32em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin: 0 0 1rem;
+  }
+  .standard h3 {
+    font-family: var(--serif);
+    font-weight: 400;
+    font-size: 1.6rem;
+    margin: 0 0 0.2rem;
+  }
+  .standard .thai {
+    font-family: var(--thai);
+    font-size: 0.95rem;
+    color: var(--bone-dim);
+    margin: 0 0 1.2rem;
+  }
+  .standard ul { list-style: none; margin: 0; padding: 0; }
+  .standard li {
+    position: relative;
+    padding: 0.5rem 0 0.5rem 1.4rem;
+    font-size: 0.95rem;
+    color: var(--bone-dim);
+    border-top: 1px solid var(--gold-faint);
+  }
+  .standard li:first-child { border-top: none; }
+  .standard li::before {
+    content: "◆";
+    position: absolute; left: 0; top: 0.62rem;
+    font-size: 0.6rem;
+    color: var(--gold);
+  }
+  .standard li b { color: var(--bone); font-weight: 500; }
+  .standards-note {
+    margin-top: 2rem;
+    max-width: 44rem;
+    font-size: 0.95rem;
+    color: var(--bone-dim);
+  }
+  .standards-note b { color: var(--bone); font-weight: 500; }
+  .standards-note .thai { font-family: var(--thai); color: var(--gold); }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <svg class="unalome" width="40" height="104" viewBox="0 0 46 120" fill="none" aria-hidden="true">
+    <path d="M23 4 V44" stroke="var(--gold)" stroke-width="1.4" stroke-linecap="round"/>
+    <path d="M23 44 L18 54 L28 64 L18 74 L23 80" stroke="var(--gold)" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    <path d="M23 80 C 23 86, 34 88, 34 97 C 34 106, 12 107, 12 97 C 12 90, 30 89, 30 97 C 30 102, 18 102, 19 97" stroke="var(--gold)" stroke-width="1.4" stroke-linecap="round" fill="none"/>
+    <circle cx="23" cy="2.5" r="2.5" fill="var(--gold)"/>
+  </svg>
+  <p class="thai-title">หมวกยันต์</p>
+  <h1>Muak Yant</h1>
+  <p class="tagline">Sacred work above the crown — helmets blessed by living masters of the Lanna tradition: yant calligraphy, takrut, sacred powder, gold leaf, consecration — for those who ride.</p>
+  <p class="cities"><b>Chiang&nbsp;Mai</b> · Singapore · Beverly&nbsp;Hills · Geneva</p>
+</header>
+
+<main>
+
+  <section id="belief">
+    <div class="wrap reveal">
+      <p class="eyebrow">The Belief · ความเจื้อ</p>
+      <h2>A yant saved my life.<br>This house exists because of it.</h2>
+      <p class="h2-thai">ยันต์เคยฮักษาชีวิตเฮาไว้ — บ้านหลังนี้เกิดขึ้นเพราะเหตุนั้นเจ้า</p>
+      <div class="belief-grid">
+        <div class="prose">
+          <p>Early in 2026, the nagas warned me. They foretold what was coming, and advised me to carry a <em>pha yant</em> of Luang Pu Thuat — for the first time in my life. I obeyed. Minutes later, my motorcycle slid out from under me on the road.</p>
+          <p>I stood up without a scratch. Not one mark. That pha yant now travels everywhere I go, and I believe in the nagas with my whole heart.</p>
+          <p class="dim">Lanna people have held this knowledge since the old days: carrying the correct yantra — the right teacher, the right <em>wichaa</em> — is protection. <span class="gold">แคล้วคลาด</span> — <em>klaew klaad</em> — the harm that passes you by.</p>
+          <p class="dim">Everything this house does begins there. Not merchandise. Wichaa.</p>
+        </div>
+        <aside class="belief-aside">
+          “The head is the highest part of the body. A helmet sits above the crown every day — among all worldly objects, one of the few where sacred script is truly in its proper place.”
+          <span class="thai">หัวเป็นของสูง — หมวกอยู่เหนือเกล้าทุกวันเจ้า</span>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <section id="commissions">
+    <div class="wrap reveal">
+      <p class="eyebrow">The Work · งานครู</p>
+      <h2>One helmet at a time,<br>under the authority of a master.</h2>
+      <p class="h2-thai">ทีละใบ ตามครรลองของครูบาอาจารย์</p>
+      <div class="prose">
+        <p>The tradition is wide, and so is this house. A blessed helmet may be the work of a <em>sak yant</em> master, a maker of <em>takrut</em>, a painter of <em>pha yant</em>, a keeper of sacred powder or gold leaf, or a monk who consecrates — each a lineage of its own.</p>
+        <p>Every commission is presented to the right master for the intent. He decides what may be given, where it may sit, and to whom. He may decline. His formulas are never copied, never reproduced, never made into stock designs. The work is done at his samnak, by his own auspicious timing, and consecrated as he sees fit.</p>
+      </div>
+      <div class="tiers">
+        <div class="tier">
+          <span class="numeral">I</span>
+          <h3>The Single Blessing</h3>
+          <p class="thai">ยันต์เดี่ยว / คาถาตะกรุด</p>
+          <p class="desc">One mark at a single focused position — a yant in khom script, or the formula of a takrut carried onto the shell in ink. The essential commission.</p>
+          <p class="price">from ฿5,000</p>
+          <p class="usd">≈ USD 150</p>
+        </div>
+        <div class="tier">
+          <span class="numeral">II</span>
+          <h3>The Full Composition</h3>
+          <p class="thai">องค์ประกอบเต็ม</p>
+          <p class="desc">Multiple yant and script passages composed across the helmet, designed to the rider's intent — protection, metta, trade.</p>
+          <p class="price">฿12,000–20,000</p>
+          <p class="usd">≈ USD 350–570</p>
+        </div>
+        <div class="tier">
+          <span class="numeral">III</span>
+          <h3>The Masterwork</h3>
+          <p class="thai">ชั้นครู — ทั้งใบ</p>
+          <p class="desc">The entire helmet as one sacred composition. Undertaken by invitation of the ajarn only.</p>
+          <p class="price">from ฿30,000</p>
+          <p class="usd">≈ USD 850</p>
+        </div>
+      </div>
+      <p class="pricing-note"><b>Introductory prices, honestly named.</b> These are the opening prices of a young house working with living masters. As each ajarn's waiting list grows, prices rise with it — the rarer the master's hand, the more it is worth. The <em>khan khru</em>, the traditional offering to the teacher, is separate from every figure above and belongs entirely to the ajarn.</p>
+    </div>
+  </section>
+
+  <section id="standards">
+    <div class="wrap reveal">
+      <p class="eyebrow">Two Standards · สองมาตรฐาน</p>
+      <h2>A helmet must pass two tests —<br>the divine and the road.</h2>
+      <p class="h2-thai">หมวกต้องผ่านสองด่าน: ด่านสวรรค์ และด่านถนน</p>
+      <div class="prose">
+        <p>A blessing that weakens the shell is no blessing at all. This house holds both standards as sacred, and will refuse any work that honors one by breaking the other.</p>
+      </div>
+      <div class="standards">
+        <div class="standard">
+          <p class="mark">The Divine Standard · ด่านสวรรค์</p>
+          <h3>Done right by the wichaa</h3>
+          <p class="thai">ถูกครู ถูกตำรา ถูกฤกษ์</p>
+          <ul>
+            <li>The correct master for the intent, the correct <b>formula</b>, the correct auspicious timing.</li>
+            <li>Consecration where the tradition calls for it — <b>the mark is alive</b>, not decorative.</li>
+            <li>Nothing is copied or mass-produced; each helmet answers to a lineage.</li>
+          </ul>
+        </div>
+        <div class="standard">
+          <p class="mark">The Road Standard · ด่านถนน</p>
+          <h3>Certification stays intact</h3>
+          <p class="thai">มาตรฐานความปลอดภัยไม่เสีย</p>
+          <ul>
+            <li>The shell is <b>never drilled, cut, or pierced</b> — the impact structure is untouched.</li>
+            <li>Only shell-safe inks and finishes; <b>DOT / ECE / Snell marks are never painted over</b>.</li>
+            <li>Nothing hard is placed between head and liner — a physical <b>takrut rides with the rider</b>, while its formula rides the shell in ink.</li>
+          </ul>
+        </div>
+      </div>
+      <p class="standards-note"><b>Why the takrut rides with you, not inside the shell.</b> A metal takrut sealed under the liner would compromise both fit and impact absorption — so the tradition and the engineering agree: the rider carries the physical takrut, and the master carries its <span class="thai">คาถา</span> onto the helmet in sacred ink. The head is guarded twice, and the helmet still saves your life the ordinary way, too.</p>
+    </div>
+  </section>
+
+  <section id="covenant">
+    <div class="wrap reveal">
+      <p class="eyebrow">The Covenant · คำมั่น</p>
+      <h2>Rules-bound, and proud of it.</h2>
+      <p class="h2-thai">วิชามีครู มีขนบ มีข้อห้าม — เฮาถือกฎเจ้า</p>
+      <div class="prose">
+        <p class="dim">Wichaa has teachers, customs, and prohibitions. This house keeps them.</p>
+      </div>
+      <div class="covenant">
+        <div>
+          <h4>The ajarn decides</h4>
+          <p>Which yant, what placement, which recipient. He may refuse any commission, and owes no explanation.</p>
+        </div>
+        <div>
+          <h4>Nothing is rushed</h4>
+          <p>Sacred work moves by auspicious timing, not delivery schedules. The calendar belongs to the master.</p>
+        </div>
+        <div>
+          <h4>Nothing is haggled</h4>
+          <p>There is no bargaining over the sacred. Clients who bargain are turned away by us — never by the ajarn.</p>
+        </div>
+        <div>
+          <h4>Nothing is copied</h4>
+          <p>Scripts and formulas belong to the master's lineage. No reproductions, no stock designs, ever.</p>
+        </div>
+        <div>
+          <h4>Provenance, always</h4>
+          <p>Every piece is delivered with a provenance document — bearing the ajarn's name, or anonymous, as he wishes.</p>
+        </div>
+        <div>
+          <h4>Consecration is real</h4>
+          <p>Where the ajarn deems it fitting, the finished work is consecrated at his samnak. Clients may attend with his permission.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="salon">
+    <div class="wrap reveal">
+      <p class="eyebrow">The Trunk Salon · เปิดหีบพระเครื่อง</p>
+      <h2>Fine amulets, presented live,<br>for collectors far from Chiang Mai.</h2>
+      <p class="h2-thai">พระเครื่องชั้นดี ถ่ายทอดสด เถิงนักสะสมทั่วโลกเจ้า</p>
+      <div class="prose">
+        <p>Alongside the helmet work, this house hosts <em>online trunk shows</em> — curated evening salons, streamed live from Chiang Mai, where devout sellers of fine amulets present their pieces to collectors abroad. Small rooms, real provenance, no rush.</p>
+      </div>
+      <div class="salon-cities" aria-label="Salon cities">
+        <span>Singapore</span>
+        <span>Beverly&nbsp;Hills</span>
+        <span>Geneva</span>
+      </div>
+      <div class="salon-invite">
+        <h4>To the sellers of sacred things — <span class="thai">เจิญเจ้า</span></h4>
+        <p>If you are devout about what you sell, and you know your pieces deserve customers who honor them — <b>present with us</b>. You bring the amulets, the lineage, the stories told truthfully. We bring the room: vetted international collectors, live interpretation, white-glove settlement and shipping, and a house rule that provenance is spoken plainly or not at all.</p>
+        <p>Sellers are received by invitation and referral. <b>The first salons are forming now.</b></p>
+      </div>
+    </div>
+  </section>
+
+  <section id="inquire" class="inquire">
+    <div class="wrap reveal">
+      <p class="eyebrow">Inquire · ติดต่อเฮา</p>
+      <h2>By appointment, jao.</h2>
+      <div class="prose">
+        <p class="dim">Commissions, salon invitations, and conversations about the work — we answer everything personally, from Chiang Mai.</p>
+      </div>
+      <div class="contact">
+        <span class="slot">[ LINE ]</span> · <span class="slot">[ E-mail ]</span><br>
+        <span class="slot">[ Studio address · Chiang Mai ]</span>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  Muak Yant · หมวกยันต์ · Chiang Mai — sacred work, honestly priced, rules-bound
+</footer>
+
+<script>
+  (function () {
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      document.querySelectorAll('.reveal').forEach(el => el.classList.add('in'));
+      return;
+    }
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+    }, { threshold: 0.12 });
+    document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+  })();
+</script>
+
+</body>
+</html>

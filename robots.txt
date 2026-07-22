@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://hongdam.net/sitemap.xml
